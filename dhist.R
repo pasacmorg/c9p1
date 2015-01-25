@@ -1,3 +1,10 @@
+# author: Lorraine Denby
+#   http://pubs.research.avayalabs.com/pdfs/ALR-2007-003-paper.pdf
+
+# references: L. Denby and C. Mallows. Variations on the histogram. 
+#   Journal of Computational and Graphical Statistics, 18 (1):21-31, 2009.
+#   http://pubs.amstat.org/doi/abs/10.1198/jcgs.2009.0002.
+
 iqr<-function(x){ return(diff(quantile(x,c(.25,.75),na.rm=T))) }
 
 dhist<-function(x, a=5*iqr(x),
